@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>温惟智的個人網站</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 增加的樣式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero-section {
+            background-color: #f0f0f0;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我是温惟智</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="btn-home">首頁</a></li>
+                <li><a href="#" class="btn-about">關於我</a></li>
+                <li><a href="#" class="btn-interests">興趣</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>我是温惟智</h1>
+        <p>我的興趣是打遊戲王、吃拉麵以及看動漫。<br>
+        我最喜歡邊吃拉麵邊用手機玩原神，請大家多多指教！</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 温惟智</p>
+    </footer>
+
+    <script>
+        const btnHome = document.querySelector('.btn-home');
+        const btnAbout = document.querySelector('.btn-about');
+        const btnInterests = document.querySelector('.btn-interests');
+
+        // 增加按鈕的點擊事件監聽器
+        btnHome.addEventListener('click', () => {
+            alert('歡迎來到首頁！');
+        });
+
+        btnAbout.addEventListener('click', () => {
+            alert('這裡是關於我！');
+        });
+
+        btnInterests.addEventListener('click', () => {
+            alert('這是我的興趣！');
+        });
+    </script>
+</body>
+</html>
